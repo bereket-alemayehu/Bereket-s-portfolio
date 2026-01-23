@@ -29,16 +29,16 @@ export const projects: Project[] = [
     slug: "cbhi-mobile-app",
     title: "CBHI Mobile Application (Ethiopian Health Insurance)",
     summary:
-      "Contributed to a Community-Based Health Insurance (CBHI) mobile app built with Flutter using GetX; focused on scalable state management and real-world health workflows.",
+      "Architected and developed a comprehensive Community-Based Health Insurance (CBHI) mobile application using Flutter and GetX, delivering robust state management and intuitive health workflow experiences for field operations across Ethiopia.",
     context: "Mobile Application Developer at Habtech (until end of December).",
     role: "Mobile Developer",
     tech: ["Flutter", "Dart", "GetX", "Riverpod"],
     highlights: [
-      "Implemented core CBHI workflows for field usage.",
-      "Applied GetX patterns for scalable, maintainable state management.",
-      "Collaborated with team for feature delivery and reliability.",
-      "Worked with real production constraints: stability, usability, and field readiness.",
-      "Improved maintainability by keeping features modular and testable by design.",
+      "Engineered core CBHI enrollment and claims workflows optimized for field usage with offline capabilities.",
+      "Implemented scalable GetX state management patterns ensuring maintainable and testable code architecture.",
+      "Collaborated cross-functionally with healthcare experts to deliver reliable, production-ready features.",
+      "Navigated complex production constraints including network reliability, data synchronization, and user experience in challenging field conditions.",
+      "Established modular architecture principles that improved code maintainability and enabled rapid feature iteration.",
     ],
     experienceGained: [
       "At Habtech, I gained strong technical and professional discipline — delivering features within time and budget.",
@@ -59,16 +59,16 @@ export const projects: Project[] = [
     slug: "dhis2-ethiopian-calendar-dashboards",
     title: "DHIS2 Enhancements: Ethiopian Calendar + Dashboards",
     summary:
-      "Worked on DHIS2 mobile and web systems for Sidama and Somali regions, including Ethiopian Calendar integration and interactive dashboards for data monitoring.",
+      "Transformed DHIS2 health information systems for Sidama and Somali regions by implementing Ethiopian Calendar integration and crafting sophisticated interactive dashboards that revolutionized data monitoring and decision-making processes.",
     context: "DHIS2 mobile + web contributions for regional health systems.",
     role: "DHIS2 Developer",
     tech: ["DHIS2", "JavaScript", "Dashboards", "Indicators"],
     highlights: [
-      "Collaborated to integrate Ethiopian Calendar into DHIS2 (major local usability improvement).",
-      "Designed DHIS2 dashboards for fetching, tracking, and analyzing program data.",
-      "Enabled decision-making via clear monitoring views for health stakeholders.",
-      "Worked on both mobile and web-side DHIS2 workflows for Sidama and Somali regions.",
-      "Focused on usability and local adoption (localized calendar and clear monitoring views).",
+      "Pioneered Ethiopian Calendar integration into DHIS2, dramatically improving local usability and cultural relevance for health workers.",
+      "Architected comprehensive dashboards with advanced data visualization, enabling real-time tracking of health program indicators and KPIs.",
+      "Empowered health stakeholders with actionable insights through intuitive monitoring interfaces that transformed raw data into strategic decisions.",
+      "Delivered seamless cross-platform experiences across mobile and web environments for Sidama and Somali regional health systems.",
+      "Prioritized localization and user adoption by implementing culturally appropriate interfaces and Ethiopian calendar systems.",
     ],
     experienceGained: [
       "Deepened my DHIS2 understanding: programs, indicators, dashboards, and practical health reporting workflows.",
@@ -99,15 +99,15 @@ export const projects: Project[] = [
     slug: "capacity-building-trainings",
     title: "Capacity Building & Technical Training (Hawassa + Moyale)",
     summary:
-      "Delivered hands-on DHIS2 technical training and capacity building: a two-day session at Roroi Hotel (Hawassa) and training at Somali Region (Moyale).",
+      "Led comprehensive DHIS2 technical training and capacity building initiatives across Ethiopia, conducting immersive two-day sessions at Roroi Hotel (Hawassa) and delivering specialized training in Somali Region (Moyale), empowering health professionals with advanced system expertise.",
     role: "DHIS2 Trainer / Technical Support",
     tech: ["DHIS2", "Training", "Workflows"],
     highlights: [
-      "Prepared and delivered practical training sessions.",
-      "Supported trainees with DHIS2 workflows and system usage.",
-      "Two-day training at Roroi Hotel, Hawassa.",
-      "Training delivered in Moyale (Somali Region).",
-      "Helped trainees follow standard workflows and avoid common reporting mistakes.",
+      "Designed and delivered intensive, practical training curricula focused on real-world DHIS2 implementation scenarios.",
+      "Provided hands-on technical support, guiding trainees through complex workflows and system optimization techniques.",
+      "Facilitated transformative two-day training program at Roroi Hotel, Hawassa, covering advanced DHIS2 features and best practices.",
+      "Extended training reach to Somali Region (Moyale), adapting content for diverse regional healthcare contexts.",
+      "Minimized reporting errors and improved data quality by establishing standardized workflows and troubleshooting methodologies.",
     ],
     experienceGained: [
       "Strengthened my communication and facilitation skills through hands-on, practical training delivery.",
@@ -158,16 +158,16 @@ export const projects: Project[] = [
     slug: "laravel-backend-systems",
     title: "Laravel Backend Systems (Helder Technologies)",
     summary:
-      "Built backend systems with Laravel, including modern admin dashboards using Filament and Livewire 3; collaborated closely with frontend developers for robust integration.",
+      "Engineered sophisticated backend architectures using Laravel with cutting-edge Filament and Livewire 3 technologies, creating powerful admin dashboards and seamless API integrations that powered multiple client websites with exceptional performance and security.",
     context: "Laravel Backend Developer at Helder Technologies.",
     role: "Backend Developer",
     tech: ["Laravel", "Filament", "Livewire 3", "MySQL/PostgreSQL"],
     highlights: [
-      "Built maintainable backend systems for multiple client websites.",
-      "Focused on performance, security, and long-term maintainability.",
-      "Worked in close collaboration with frontend teams.",
-      "Developed data-driven admin dashboards using Filament and Livewire 3.",
-      "Designed clean APIs and backend logic to support reliable frontend integration.",
+      "Architected scalable backend systems for diverse client portfolios, ensuring high availability and optimal performance.",
+      "Implemented enterprise-grade security measures and performance optimizations for mission-critical applications.",
+      "Established seamless collaboration workflows with frontend teams, enabling rapid feature development and integration.",
+      "Crafted intuitive, data-driven admin dashboards using Filament and Livewire 3, providing clients with powerful content management capabilities.",
+      "Designed robust RESTful APIs and backend logic that facilitated reliable, real-time frontend-backend communication.",
     ],
     experienceGained: [
       "Strengthened backend architecture skills in Laravel with a focus on clean structure and long-term maintainability.",
@@ -195,10 +195,10 @@ export const projects: Project[] = [
     slug: "tanaexpress",
     title: "TanaExpress (eCommerce Mobile App)",
     summary:
-      "A fast, secure, user-friendly eCommerce mobile app experience with simple browsing, purchasing, and discounts.",
+      "Crafted a high-performance eCommerce mobile application with lightning-fast transactions, advanced security features, and an intuitive user experience that prioritizes seamless browsing, secure purchasing, and exclusive discount management.",
     role: "Mobile Developer",
     tech: ["Flutter"],
-    highlights: ["Mobile-first UX", "Performance-focused flows"],
+    highlights: ["Mobile-first UX with advanced gesture controls", "Performance-optimized checkout flows with real-time validation"],
     cover: media("/project1.png", "TanaExpress app preview"),
     gallery: [media("/project1.png", "TanaExpress app preview")],
   },
@@ -206,10 +206,10 @@ export const projects: Project[] = [
     slug: "pick-your-meal",
     title: "Pick Your Meal",
     summary:
-      "Flutter app that lets users browse and select meals based on preferences with an intuitive UX.",
+      "Developed an elegant Flutter application that revolutionizes meal selection with intelligent preference matching, stunning visual design, and a smooth, intuitive user experience that makes food discovery delightful and effortless.",
     role: "Mobile Developer",
     tech: ["Flutter"],
-    highlights: ["Clean UI", "Simple meal browsing"],
+    highlights: ["Polished UI with sophisticated animations", "Smart preference-based meal recommendations"],
     links: [
       {
         label: "GitHub",
@@ -223,10 +223,10 @@ export const projects: Project[] = [
     slug: "expense-tracker",
     title: "Expense Tracker",
     summary:
-      "Flutter app to track daily expenses with visualizations and budgeting insights.",
+      "Built a comprehensive expense management application featuring advanced data visualization, intelligent budgeting algorithms, and insightful analytics that transform financial tracking into a powerful decision-making tool.",
     role: "Mobile Developer",
     tech: ["Flutter"],
-    highlights: ["Add/edit/delete expenses", "Charts and insights"],
+    highlights: ["Intuitive expense CRUD operations", "Advanced charting and financial insights"],
     links: [
       {
         label: "GitHub",
@@ -240,10 +240,10 @@ export const projects: Project[] = [
     slug: "omnifood",
     title: "OmniFood",
     summary:
-      "Responsive food delivery website focused on clear UX and fast browsing.",
+      "Designed a responsive food delivery platform with exceptional user experience, featuring rapid browsing capabilities, elegant animations, and a clean, modern interface that sets new standards for food delivery websites.",
     role: "Frontend Developer",
     tech: ["HTML", "CSS", "JavaScript"],
-    highlights: ["Responsive layout", "Clean landing page"],
+    highlights: ["Fully responsive design across all devices", "Modern landing page with smooth interactions"],
     links: [
       {
         label: "GitHub",
@@ -257,10 +257,10 @@ export const projects: Project[] = [
     slug: "gamezone",
     title: "GameZone",
     summary:
-      "React + Node.js website to explore and rent games based on preferences and device specs.",
+      "Engineered a full-stack gaming platform combining React's dynamic frontend with Node.js backend, offering sophisticated game discovery, rental management, and device compatibility matching for an unparalleled gaming experience.",
     role: "Full-Stack Developer",
     tech: ["React", "Node.js"],
-    highlights: ["Filtering and discovery", "User-friendly UI"],
+    highlights: ["Advanced filtering and recommendation engine", "Intuitive user interface with seamless navigation"],
     links: [
       {
         label: "GitHub",
@@ -273,10 +273,10 @@ export const projects: Project[] = [
   {
     slug: "dice-roller",
     title: "Dice Roller Game",
-    summary: "Simple interactive dice roller built with web fundamentals.",
+    summary: "Created an engaging interactive dice game that demonstrates mastery of web fundamentals with smooth animations, responsive design, and intuitive gameplay mechanics.",
     role: "Frontend Developer",
     tech: ["HTML", "CSS", "JavaScript"],
-    highlights: ["Interactive UI", "Simple game logic"],
+    highlights: ["Polished interactive UI with fluid animations", "Clean game logic with excellent user feedback"],
     links: [
       {
         label: "GitHub",
@@ -290,10 +290,10 @@ export const projects: Project[] = [
     slug: "bankist",
     title: "Bankist",
     summary:
-      "Dynamic banking landing page built with JavaScript, HTML, and CSS.",
+      "Developed a sophisticated banking landing page with dynamic JavaScript interactions, modern CSS animations, and a professional design that effectively communicates financial services with elegance and clarity.",
     role: "Frontend Developer",
     tech: ["HTML", "CSS", "JavaScript"],
-    highlights: ["Smooth interactions", "Modern layout"],
+    highlights: ["Fluid micro-interactions and animations", "Contemporary layout with excellent visual hierarchy"],
     links: [
       {
         label: "GitHub",

@@ -1,27 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap");
 @import "tailwindcss";
 
 :root {
   --background: #ffffff;
-  --foreground: #171717;
-  --overlay: rgba(0, 0, 0, 0.72);
+  --foreground: #0f172a;
+  --muted: #64748b;
+  --muted-foreground: #94a3b8;
+  --border: #e2e8f0;
+  --card: #ffffff;
+  --card-foreground: #0f172a;
+  --primary: #3b82f6;
+  --primary-foreground: #ffffff;
+  --secondary: #f1f5f9;
+  --secondary-foreground: #0f172a;
+  --accent: #f8fafc;
+  --accent-foreground: #0f172a;
+  --destructive: #ef4444;
+  --overlay: rgba(0, 0, 0, 0.8);
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: var(--font-geist-mono);
 }
 
 /* next-themes toggles a `dark` class on <html> */
 .dark {
-  --background: #0a0a0a;
-  --foreground: #ededed;
-  --overlay: rgba(0, 0, 0, 0.72);
+  --background: #0f172a;
+  --foreground: #f8fafc;
+  --muted: #64748b;
+  --muted-foreground: #94a3b8;
+  --border: #334155;
+  --card: #1e293b;
+  --card-foreground: #f8fafc;
+  --primary: #60a5fa;
+  --primary-foreground: #0f172a;
+  --secondary: #334155;
+  --secondary-foreground: #f8fafc;
+  --accent: #1e293b;
+  --accent-foreground: #f8fafc;
+  --destructive: #f87171;
+  --overlay: rgba(0, 0, 0, 0.9);
+  --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  --gradient-accent: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+    "Inter",
+    system-ui,
+    -apple-system,
+    sans-serif;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--muted);
+}
+
+/* Selection */
+::selection {
+  background: var(--primary);
+  color: var(--primary-foreground);
+}
+
+/* Glassmorphism utility */
+.glass {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.dark .glass {
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* Gradient text */
+.gradient-text {
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Animated border */
+.animated-border {
+  position: relative;
+  background: var(--gradient-primary);
+  padding: 2px;
+  border-radius: inherit;
+}
+
+.animated-border::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: inherit;
+  background: var(--background);
+  z-index: -1;
+}
+
+/* Theme-aware animated snow background */
+:root {
+  --snow-1: color-mix(in srgb, var(--foreground) 16%, transparent);
+  --snow-2: color-mix(in srgb, var(--foreground) 10%, transparent);
+}
+
+.snow-bg {
+  position: relative;
+}
+
+.snow-bg::before,
+.snow-bg::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.snow-bg::before {
+  background-image:
+    radial-gradient(circle, var(--snow-1) 1px, transparent 1.6px),
+    radial-gradient(circle, var(--snow-2) 1px, transparent 1.8px);
+  background-size:
+    60px 60px,
+    110px 110px;
+  background-position:
+    0 0,
+    25px 35px;
+  animation: snow-fall-1 18s linear infinite;
+  opacity: 0.55;
+}
+
+.snow-bg::after {
+  background-image: radial-gradient(
+    circle,
+    var(--snow-2) 1px,
+    transparent 1.8px
+  );
+  background-size: 160px 160px;
+  background-position: 80px 0;
+  animation: snow-fall-2 28s linear infinite;
+  opacity: 0.4;
+}
+
+/* Keep content above the snow layers */
+.snow-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes snow-fall-1 {
+  from {
+    background-position:
+      0 -200px,
+      25px -260px;
+  }
+  to {
+    background-position:
+      0 800px,
+      25px 900px;
+  }
+}
+
+@keyframes snow-fall-2 {
+  from {
+    background-position: 80px -300px;
+  }
+  to {
+    background-position: 80px 900px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .snow-bg::before,
+  .snow-bg::after {
+    animation: none;
+  }
 }

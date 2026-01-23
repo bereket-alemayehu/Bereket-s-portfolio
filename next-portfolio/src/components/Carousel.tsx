@@ -31,7 +31,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
             setIsZoomed(false);
             setIsOpen(true);
           }}
-          className="relative block aspect-video w-full overflow-hidden rounded-xl border border-foreground/10 bg-foreground/5"
+          className="relative block aspect-video w-full overflow-hidden rounded-xl border border-border/50 bg-card"
           aria-label="Open image"
         >
           <Image
@@ -52,7 +52,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
                 e.stopPropagation();
                 goPrev();
               }}
-              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full bg-foreground/80 px-3 py-2 text-sm font-medium text-background hover:bg-foreground"
+              className="absolute left-3 top-1/2 -translate-y-1/2 rounded-full border border-border/50 bg-card px-3 py-2 text-sm font-medium text-foreground hover:bg-secondary"
               aria-label="Previous image"
             >
               Prev
@@ -63,7 +63,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
                 e.stopPropagation();
                 goNext();
               }}
-              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full bg-foreground/80 px-3 py-2 text-sm font-medium text-background hover:bg-foreground"
+              className="absolute right-3 top-1/2 -translate-y-1/2 rounded-full border border-border/50 bg-card px-3 py-2 text-sm font-medium text-foreground hover:bg-secondary"
               aria-label="Next image"
             >
               Next
@@ -107,10 +107,10 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between">
-              <div className="text-sm text-white/90">{current.alt}</div>
+              <div className="text-sm text-muted-foreground">{current.alt}</div>
               <button
                 type="button"
-                className="rounded-lg bg-white/10 px-3 py-2 text-sm text-white hover:bg-white/20"
+                className="rounded-lg border border-border/50 bg-card px-3 py-2 text-sm text-foreground hover:bg-secondary"
                 onClick={() => setIsOpen(false)}
                 aria-label="Close"
               >
@@ -118,7 +118,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
               </button>
             </div>
 
-            <div className="mt-4 flex-1 overflow-hidden rounded-xl bg-white/5">
+            <div className="mt-4 flex-1 overflow-hidden rounded-xl border border-border/50 bg-card">
               <button
                 type="button"
                 className="relative h-full w-full"
@@ -150,7 +150,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
                       setIsZoomed(false);
                       goPrev();
                     }}
-                    className="absolute left-6 top-1/2 -translate-y-1/2 rounded-full bg-white/15 px-4 py-3 text-sm font-medium text-white hover:bg-white/25"
+                    className="absolute left-6 top-1/2 -translate-y-1/2 rounded-full border border-border/50 bg-card px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary"
                     aria-label="Previous image"
                   >
                     Prev
@@ -161,7 +161,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
                       setIsZoomed(false);
                       goNext();
                     }}
-                    className="absolute right-6 top-1/2 -translate-y-1/2 rounded-full bg-white/15 px-4 py-3 text-sm font-medium text-white hover:bg-white/25"
+                    className="absolute right-6 top-1/2 -translate-y-1/2 rounded-full border border-border/50 bg-card px-4 py-3 text-sm font-medium text-foreground hover:bg-secondary"
                     aria-label="Next image"
                   >
                     Next
@@ -172,7 +172,7 @@ export default function Carousel({ items }: { items: CarouselItem[] }) {
 
             {safeItems.length > 1 ? (
               <div className="mt-4 flex items-center justify-center gap-3">
-                <div className="text-sm text-white/80">
+                <div className="text-sm text-muted-foreground">
                   {index + 1} / {safeItems.length}
                 </div>
               </div>
